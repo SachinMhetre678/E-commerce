@@ -3,8 +3,7 @@
 
 import { useState } from "react";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation"; // Changed from next/router
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export default function Register() {
   const [email, setEmail] = useState("");
