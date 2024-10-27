@@ -6,9 +6,16 @@ import Register from "../../../../components/Register";
 
 const RegisterStep1Page = () => {
   const router = useRouter();
+
+  // You can use router here if needed, e.g., for navigation
+  const handleNavigation = () => {
+    router.push('/auth/register/step2'); // Example usage
+  };
+
   return (
     <div>
-      <Register /> {/* Make sure to use the Register component */}
+      <Register />
+      <button onClick={handleNavigation}>Next Step</button> {/* Example button */}
     </div>
   );
 };
