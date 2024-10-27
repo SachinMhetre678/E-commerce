@@ -912,7 +912,7 @@ const gradientClasses = [
               No categories found
             </h3>
             <p className="text-gray-500 max-w-md mx-auto">
-              We couldn't find any categories matching your search. Try different keywords or browse our featured categories above.
+              We could not find any categories matching your search. Try different keywords or browse our featured categories above.
             </p>
           </div>
         )}
