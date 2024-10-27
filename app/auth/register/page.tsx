@@ -12,8 +12,7 @@ const Register = () => {
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Mock user creation logic
-    const newUser = { email, password }; // Save new user to your database
+    // Mock user creation logic // Save new user to your database
 
     // After creating the user, log them in
     const result = await signIn("credentials", {

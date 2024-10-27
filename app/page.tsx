@@ -1,6 +1,5 @@
 "use client";
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { 
@@ -251,16 +250,6 @@ const HomePage = () => {
   );
 };
 
-// Add this to your global CSS file
-const styles = `
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  
-  .animate-fadeIn {
-    animation: fadeIn 0.2s ease-out forwards;
-  }
-`;
+
 
 export default HomePage;

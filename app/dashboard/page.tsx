@@ -9,7 +9,7 @@ import {
   Hammer, Flower, Dog, Church, Vote, Brain, Newspaper, Share2,
   Bitcoin, Database, Bot, Shield, Blocks, Smartphone, Code, 
   Monitor, Cloud, Terminal, Glasses, ChevronRight, Search,
-  ShoppingCart, Star, Bell, Percent
+  ShoppingCart, Star, Percent
 } from "lucide-react";
 import { Alert, AlertDescription } from '../components/ui/alert';
 
@@ -700,7 +700,6 @@ const gradientClasses = [
     const [alertMessage, setAlertMessage] = useState("");
     const itemsPerPage = 6;
     const [categories, setCategories] = useState(mockCategories);
-    const [hoveredId, setHoveredId] = useState<number | null>(null);
     const [featuredCategories, setFeaturedCategories] = useState<Category[]>([]);
 
     useEffect(() => {
@@ -849,7 +848,7 @@ const gradientClasses = [
 
         {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {paginatedCategories.map((category, index) => {
+          {paginatedCategories.map((category) => {
             const IconComponent = getIconForCategory(category.name);
             const isInterested = interests.includes(category.id);
             
