@@ -1,7 +1,6 @@
 // next.config.ts
 const nextConfig = {
-  // other configurations
-  swcMinify: true, // Remove this line
+  // other configurations // Remove this line
 };
 
 export default nextConfig;
