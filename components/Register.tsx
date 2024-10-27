@@ -1,4 +1,5 @@
-"use client";
+// app/auth/register/step1/page.tsx
+"use client"; // Add this directive at the top
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -284,7 +285,7 @@ const Register = () => {
                 className="font-medium text-indigo-600 hover:text-indigo-500 transition-colors"
               >
                 Sign in
-                </Link>
+              </Link>
             </p>
           </div>
         </div>

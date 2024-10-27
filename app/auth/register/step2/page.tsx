@@ -1,12 +1,18 @@
-// app/auth/register/step2.tsx
+// app/auth/register/step2/page.tsx
+"use client"; // Add this directive at the top
+
+import React from 'react';
 import Header from "../../../../components/Header";
+import { useRouter } from "next/navigation";
+import Login from '@/components/Login';
 
 const RegisterStep2Page = () => {
+  const router = useRouter();
+
   return (
     <div>
       <Header />
-      <h2>Register - Step 2</h2>
-      <p>Step 2 content goes here.</p>
+      <Login/>
       {/* Add step 2 registration details */}
     </div>
   );
